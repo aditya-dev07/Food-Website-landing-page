@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - FoodieDelight</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">FoodieDelight</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" id="signin-btn">Sign In</a></li>
+          <li><a href="#" id="signup-btn">Sign Up</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="services">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>
+          Explore the variety of services we offer to enrich your culinary
+          journey.
+        </p>
+        <div class="service-list">
+          <div class="service-item">
+            <img src="/assets/receipe.jpg" alt="Recipe Collections" />
+            <h2>Recipe Collections</h2>
+            <p>Access thousands of exclusive recipes curated by top chefs.</p>
+          </div>
+          <div class="service-item">
+            <img src="/assets/onlinecooking.jpg" alt="Online Cooking Classes" />
+            <h2>Online Cooking Classes</h2>
+            <p>
+              Join interactive classes and learn new skills from the comfort of
+              your home.
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="/assets/meal-plan.jpg" alt="Meal Planning" />
+            <h2>Personalized Meal Plans</h2>
+            <p>Get customized meal plans tailored to your dietary needs.</p>
+          </div>
+          <div class="service-item">
+            <img src="/assets/restaurant-review.jpg" alt="Restaurant Reviews" />
+            <h2>Restaurant Reviews</h2>
+            <p>Stay updated with honest reviews of local eateries.</p>
+          </div>
+          <div class="service-item">
+            <img src="/assets/delivery.jpg" alt="Ingredient Delivery" />
+            <h2>Ingredient Delivery</h2>
+            <p>Receive fresh ingredients delivered straight to your door.</p>
+          </div>
+          <div class="service-item">
+            <img src="/assets/catering.jpg" alt="Catering Services" />
+            <h2>Catering Services</h2>
+            <p>
+              Let us cater your next event with exquisite dishes that impress
+              your guests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signin">&times;</span>
+        <h1>Sign In</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signin-email">Email</label>
+          <input type="email" id="signin-email" name="email" required />
+
+          <label for="signin-password">Password</label>
+          <input
+            type="password"
+            id="signin-password"
+            name="password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign In</button>
+        </form>
+        <p class="switch-auth">
+          Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h1>Sign Up</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" name="name" required />
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required />
+
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+          />
+
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="signup-confirm-password"
+            name="confirm-password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="switch-auth">
+          Already have an account? <a href="#" id="switch-to-signin">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 FoodieDelight. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

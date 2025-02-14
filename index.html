@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieDelight - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">FoodieDelight</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" id="signin-btn">Sign In</a></li>
+          <li><a href="#" id="signup-btn">Sign Up</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to FoodieDelight</h1>
+        <p>
+          Discover delicious recipes and culinary tips. Your foodie journey
+          starts here!
+        </p>
+        <a href="services.html" class="btn">Explore Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/food.png" alt="Delicious Food" />
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature">
+        <h2>Exclusive Recipes</h2>
+        <p>Access gourmet recipes from world-class chefs.</p>
+      </div>
+      <div class="feature">
+        <h2>Cooking Tips</h2>
+        <p>Enhance your skills with expert culinary advice.</p>
+      </div>
+      <div class="feature">
+        <h2>Restaurant Reviews</h2>
+        <p>Discover the best dining spots around you.</p>
+      </div>
+    </section>
+
+    <!-- Popular Recipes Section -->
+    <section class="popular-recipes">
+      <div class="container">
+        <h2>Popular Recipes</h2>
+        <div class="recipes-grid">
+          <div class="recipe-item">
+            <img src="assets/biryani.jpg" alt="Chicken Biryani" />
+            <h3>Chicken Biryani</h3>
+            <p>
+              Aromatic and flavorful chicken biryani made with basmati rice,
+              spices, and marinated chicken.
+            </p>
+          </div>
+          <div class="recipe-item">
+            <img src="assets/avocado-toast.jpg" alt="Avocado Toast" />
+            <h3>Avocado Toast</h3>
+            <p>
+              Simple yet delicious avocado toast topped with cherry tomatoes and
+              feta.
+            </p>
+          </div>
+          <div class="recipe-item">
+            <img src="assets/cake.jpg" alt="Chocolate Lava Cake" />
+            <h3>Chocolate Lava Cake</h3>
+            <p>
+              Indulge in this warm, gooey chocolate cake with a molten chocolate
+              center.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-item">
+          <p>
+            "FoodieDelight has transformed the way I cook at home. The recipes
+            are easy to follow and always turn out great!"
+          </p>
+          <p>- Sarah W.</p>
+        </div>
+        <div class="testimonial-item">
+          <p>
+            "I love exploring new dishes with FoodieDelight. The tips and tricks
+            have improved my cooking skills immensely."
+          </p>
+          <p>- Michael B.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+          Get the latest recipes and culinary news delivered straight to your
+          inbox.
+        </p>
+        <form action="#" method="POST" class="newsletter-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h1>Sign Up</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" name="name" required />
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required />
+
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+          />
+
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="signup-confirm-password"
+            name="confirm-password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="switch-auth">
+          Already have an account? <a href="#" id="switch-to-signin">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 FoodieDelight. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

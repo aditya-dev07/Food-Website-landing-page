@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - FoodieDelight</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">FoodieDelight</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" id="signin-btn">Sign In</a></li>
+          <li><a href="#" id="signup-btn">Sign Up</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    
+    <section class="about">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>
+          At <strong>FoodieDelight</strong>, we're passionate about all things
+          culinary. Our mission is to bring gourmet experiences right to your
+          kitchen. Whether you're a seasoned chef or just starting out, we have
+          something for everyone.
+        </p>
+        <p>
+          Founded by food enthusiasts in 2025, we've grown into a community
+          where flavor meets creativity. We believe that cooking is an art form
+          that brings people together. Our aim is to inspire food lovers to
+          explore new recipes, enhance their cooking skills, and celebrate the
+          joy of sharing a meal with loved ones.
+        </p>
+        <h2>Our Vision</h2>
+        <p>
+          To be a trusted culinary companion for food enthusiasts around the
+          world, offering a platform that caters to all cooking levels and
+          culinary interests. We envision a world where everyone can enjoy the
+          process of cooking and the delight of savoring homemade meals.
+        </p>
+        <h2>Our Values</h2>
+        <ul>
+          <li>
+            <strong>Innovation:</strong> Continuously improving and introducing
+            new culinary techniques and recipes.
+          </li>
+          <li>
+            <strong>Community:</strong> Building a supportive and engaging
+            community of food lovers.
+          </li>
+          <li>
+            <strong>Quality:</strong> Providing high-quality, tested recipes and
+            cooking tips.
+          </li>
+          <li>
+            <strong>Sustainability:</strong> Promoting sustainable cooking
+            practices and reducing food waste.
+          </li>
+        </ul>
+        <h2>Our Team</h2>
+        <div class="team">
+          <div class="team-member">
+            <img src="assets/Team1.jpg" alt="Chef Anna" />
+            <h3>Chef Anna</h3>
+            <p>Head Chef & Recipe Creator</p>
+          </div>
+          <div class="team-member">
+            <img src="assets/Team2.jpg" alt="Mark Thompson" />
+            <h3>Mark Thompson</h3>
+            <p>Culinary Expert & Food Critic</p>
+          </div>
+          <div class="team-member">
+            <img src="assets/Team3.jpg" alt="Linda Johnson" />
+            <h3>Linda Johnson</h3>
+            <p>Nutritionist & Health Advisor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signin">&times;</span>
+        <h1>Sign In</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signin-email">Email</label>
+          <input type="email" id="signin-email" name="email" required />
+
+          <label for="signin-password">Password</label>
+          <input
+            type="password"
+            id="signin-password"
+            name="password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign In</button>
+        </form>
+        <p class="switch-auth">
+          Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h1>Sign Up</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" name="name" required />
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required />
+
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+          />
+
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="signup-confirm-password"
+            name="confirm-password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="switch-auth">
+          Already have an account? <a href="#" id="switch-to-signin">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 FoodieDelight. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

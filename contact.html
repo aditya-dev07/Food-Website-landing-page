@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Us -FoodieDelight</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">FoodieDelight</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="#" id="signin-btn">Sign In</a></li>
+          <li><a href="#" id="signup-btn">Sign Up</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+          We’d love to hear from you! Reach out with any questions or feedback.
+        </p>
+        <div class="contact-info">
+          <div class="info-item">
+            <h2>Address</h2>
+            <p>123 FoodStreet, Gorakhpur, India</p>
+          </div>
+          <div class="info-item">
+            <h2>Email</h2>
+            <p>support@foodiedelight.com</p>
+          </div>
+          <div class="info-item">
+            <h2>Phone</h2>
+            <p>+91-9794809845</p>
+          </div>
+        </div>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signin">&times;</span>
+        <h1>Sign In</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signin-email">Email</label>
+          <input type="email" id="signin-email" name="email" required />
+
+          <label for="signin-password">Password</label>
+          <input
+            type="password"
+            id="signin-password"
+            name="password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign In</button>
+        </form>
+        <p class="switch-auth">
+          Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h1>Sign Up</h1>
+        <form action="#" method="POST" class="auth-form">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" name="name" required />
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required />
+
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+          />
+
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="signup-confirm-password"
+            name="confirm-password"
+            required
+          />
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="switch-auth">
+          Already have an account? <a href="#" id="switch-to-signin">Sign In</a>
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 FoodieDelight. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
